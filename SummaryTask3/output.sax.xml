@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Greenhouse>
+<Flower>
+<name>Apple</name>
+<soil>Dirt</soil>
+<origin>Ukraine</origin>
+<visualParameters averageSize="large" leafColor="green" stemColor="brown"/>
+<growingTips lightning="true" temperature="20" watering="2900"/>
+<multiplying>Leaves</multiplying>
+</Flower>
+<Flower>
+<name>Pineapple</name>
+<soil>Dirt</soil>
+<origin>South America</origin>
+<visualParameters averageSize="small" leafColor="green" stemColor="green"/>
+<growingTips lightning="true" temperature="26" watering="800"/>
+<multiplying>Leaves</multiplying>
+</Flower>
+<Flower>
+<name>Cherry</name>
+<soil>Dirt</soil>
+<origin>Ukraine</origin>
+<visualParameters averageSize="large" leafColor="green" stemColor="green"/>
+<growingTips lightning="true" temperature="19" watering="500"/>
+<multiplying>Cuttings</multiplying>
+</Flower>
+<Flower>
+<name>Watermelon</name>
+<soil>Dirt</soil>
+<origin>Ukraine</origin>
+<visualParameters averageSize="small" leafColor="green" stemColor="green"/>
+<growingTips lightning="true" temperature="29" watering="2500"/>
+<multiplying>Seeds</multiplying>
+</Flower>
+</Greenhouse>

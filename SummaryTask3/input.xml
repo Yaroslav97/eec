@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Input Tag document. This Tag is valid against Test.xsd Tag schema-->
+
+<st3:Greenhouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:st3="http://nure.ua/poliakov/SummaryTask3/entity"
+                xsi:schemaLocation="http://nure.ua/poliakov/SummaryTask3/entity input.xsd">
+
+    <Flower>
+        <name>Apple</name>
+        <soil>Dirt</soil>
+        <origin>Ukraine</origin>
+        <visualParameters stemColor="brown" leafColor="green" averageSize="large"/>
+        <growingTips temperature="20" lightning="true" watering="2900"/>
+        <multiplying>Leaves</multiplying>
+    </Flower>
+
+    <Flower>
+        <name>Pineapple</name>
+        <soil>Dirt</soil>
+        <origin>South America</origin>
+        <visualParameters stemColor="green" leafColor="green" averageSize="small"/>
+        <growingTips temperature="26" lightning="true" watering="800"/>
+        <multiplying>Leaves</multiplying>
+    </Flower>
+
+    <Flower>
+        <name>Cherry</name>
+        <soil>Dirt</soil>
+        <origin>Ukraine</origin>
+        <visualParameters stemColor="green" leafColor="green" averageSize="large"/>
+        <growingTips temperature="19" lightning="true"  watering="500"/>
+        <multiplying>Cuttings</multiplying>
+    </Flower>
+
+    <Flower>
+        <name>Watermelon</name>
+        <soil>Dirt</soil>
+        <origin>Ukraine</origin>
+        <visualParameters stemColor="green" leafColor="green" averageSize="small"/>
+        <growingTips temperature="29" lightning="true" watering="2500"/>
+        <multiplying>Seeds</multiplying>
+    </Flower>
+</st3:Greenhouse>

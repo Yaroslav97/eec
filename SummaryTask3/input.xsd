@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://nure.ua/poliakov/SummaryTask3/entity"
+            xmlns:tns="http://nure.ua/poliakov/SummaryTask3/entity">
+
+    <xsd:element name="Greenhouse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Flower" type="tns:Flower" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="Flower">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="soil" type="tns:Soil"/>
+            <xsd:element name="origin" type="xsd:string"/>
+            <xsd:element name="visualParameters" type="tns:VisualParameters"/>
+            <xsd:element name="growingTips" type="tns:GrowingTips"/>
+            <xsd:element name="multiplying" type="tns:Multiplying"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="Soil">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Podzolic"/>
+            <xsd:enumeration value="Dirt"/>
+            <xsd:enumeration value="Sod-podzolic"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="Multiplying">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Leaves"/>
+            <xsd:enumeration value="Cuttings"/>
+            <xsd:enumeration value="Seeds"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <xsd:complexType name="VisualParameters">
+        <xsd:attribute name="stemColor" type="xsd:string"/>
+        <xsd:attribute name="leafColor" type="xsd:string"/>
+        <xsd:attribute name="averageSize" type="tns:AverageSize"/>
+    </xsd:complexType>
+
+    <xsd:simpleType name="AverageSize">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="small"/>
+            <xsd:enumeration value="medium"/>
+            <xsd:enumeration value="large"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <xsd:complexType name="GrowingTips">
+        <xsd:attribute name="temperature" type="xsd:integer"/>
+        <xsd:attribute name="lightning" type="xsd:boolean" default="true"/>
+        <xsd:attribute name="watering" type="xsd:integer"/>
+    </xsd:complexType>
+
+</xsd:schema>
